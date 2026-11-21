@@ -7,6 +7,7 @@ import FoodDetail from "./pages/FoodDetail.jsx";
 import Resources from "./pages/Resources.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import Team from "./pages/Team.jsx";
+import Gallery from "./pages/Gallery.jsx";
 
 export default function App() {
   const { pathname } = useLocation();
@@ -27,6 +28,7 @@ export default function App() {
           <Route path="/food/:foodId" element={<FoodDetail />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

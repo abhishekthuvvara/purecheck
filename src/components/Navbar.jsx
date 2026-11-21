@@ -26,6 +26,7 @@ export default function Navbar() {
           <NavLink to="/" end className={link}>Home</NavLink>
           <NavLink to="/resources" className={link}>Resources</NavLink>
           <NavLink to="/team" className={link}>Team</NavLink>
+          <NavLink to="/gallery" className={link}>Gallery</NavLink>
           <button onClick={toggle} aria-label={dark ? "Switch to light mode" : "Switch to dark mode"}
             className="rounded p-2 text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-700">
             {dark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
